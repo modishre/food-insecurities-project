@@ -3,7 +3,6 @@
 
 Clone this repo and work locally. Be sure to push the final version of your code (and any significant updates along the way) before submitting. To work locally, you will need to set up a Python Simple Server. Instructions for this are included below.  
 
-In order for all group members to work on code in tandem, we recommend using Branches. [Here](https://thenewstack.io/dont-mess-with-the-master-working-with-branches-in-git-and-github/) is an overview of Branches and how they help organize collaborative coding.   
 
 ## Purpose
 
