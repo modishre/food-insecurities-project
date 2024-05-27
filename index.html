@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html> 
+
+<head>
+    <meta charset=utf-8/>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>US Food Apartheid</title>
+</head>
+
+
+<body id ='homePage'>
+
+    <nav>
+        <div class="navicon">
+        <div></div>
+        </div>
+        <a href="index.html" class="tabs">Home</a>
+        <a href="map.html" class="tabs">Map Analysis and Exploration</a>
+        <a href="poverty.html" class="tabs">Poverty Rate Analysis</a>
+    </nav>
+
+
+    <p class="groove"> <h1>Food Insecurity in the United States</h1> </p>
+    <h5>Rachel Cassway, Brady Duncan, Shreya Modi, Vivian Weigel</h5>
+
+    <div>
+        <h2>Motivation</h2>
+        <blockquote>
+            <center>Food insecurity is defined as "a lack of consistent access to enough food (of nutritional value) for every
+            person in a household to live an active, healthy life." (Feeding America)
+                <br>Currently over 34 million people in the US are food insecure.
+            </center>
+        </blockquote>
+
+        <p>The domain area our project addresses is the National level of food insecurity prevalent. The main issue is
+            that it is known that there are concentrations of food disparity and low of accessibility all over the US, but there
+            is lack of proper representation and awareness. It is important to understand and clearly visualize where
+            and how individuals are struggling throughout the nation, creating a path for a more concrete solution plan to
+            be synthesized. A specific use case for the tool we are creating would be an USDA employee seeking
+            supporting evidence for a research project or grant, that would build food pantries in food-insecure
+            locations. In such a scenario, they could use the map to find counties with severe accessibility imbalances,
+            and identify those as focus points. Additionally, Congress Representatives like Jim McGovern
+            (MA) and Mary Gay Scanlon (PA) could use this resource to continue to stress the importance of
+            significant efforts to eliminate food deserts and food insecurity in an easily digestible and powerful
+            manner. As government and state representatives, at most it can be assumed they have the ability and or resources
+            to understand how to navigate the US map, and then apply though the help of our visualizations where the
+            concentrations are and where efforts are most needed.
+            <center> Our goal is to make the tool as user-friendly as
+            possible, in the way that can best represent the communities that are struggling.
+            Understanding that there is the imminent issue of inadequate food accessibility
+            in the US, we can make the conscious effort to address food apartheid, as systematic change is needed.
+            </center>
+        </p>
+    </div>
+
+    <div>
+        <h2>Background</h2>
+        <section>
+            <h4>Data</h4>
+            <p>This dashboard utilizes data from the Food Access Research Atlas. This atlas contains comprehensive
+                data about food access in each census tract. The Economic Research Service, a sector of the US
+                Department of Agriculture, gathered this data for the purpose of analyzing food access. Much of the
+                data comes from the 2010 US Census including population data, race, and ethnicity. Income, vehicle
+                availability, and SNAP participation data are from the 2014-18 American Community Survey. The US Census
+                data is one of the most comprehensive data sets about the US population and is often the best possible
+                look at the state of the US. However, there is a response bias within the data. People are asked to
+                complete the US census, and the survey is adjusted using statistical methods to attempt to make the
+                sample representative of the population. However, there is a non-response bias where the people who do
+                respond are not representative of the overall US population. Oftentimes, minorities, immigrants, and
+                those in poverty are underrepresented by the data because they have not been informed of the census
+                and its importance, or have the time and resources to complete. This means that the number of people
+                with food insecurity is likely artificially low. However, this data is still informative and while
+                keeping the bias in mind, can lead to some provocative analysis. In order to best utilize the data, some
+                cleaning was performed. Thirteen columns of the data were selected that were important to the
+                specific analysis that was performed. The data was filtered for rows that had the marker 1
+                (signifying true) for the column indicating a low access tract with residents living greater
+                than 1 mile (urban) or 20 miles (rural) from a supermarket.
+
+            <h4>Demo Video</h4>
+            <div>
+                <!-- Insert video here -->
+            </div>
+
+            <h4>Report</h4>
+            <div>
+                <!-- Insert report here -->
+            </div>
+
+            <ul>
+            <li><a href="https://www.ers.usda.gov/data-products/food-access-research-atlas/download-the-data/"
+                       target="_blank">Data Download</a></li>
+            </ul>
+            </p>
+        </section>
+    </div>
+
+    <div>
+
+        <h2>Acknowledgements</h2>
+        <ul>
+            <li><a href="https://www.feedingamerica.org/hunger-in-america/food-insecurity#:~:text=Food%20insecurity%20is%20defined%20as,people%20can't%20afford%20food." target="_blank">
+                Food Insecurity- Feeding America</a></li>
+            <li><a href="https://www.educative.io/answers/how-to-create-columns-in-html" target="_blank">
+                How to create columns in HTML</a></li>
+            <li><a href="https://bl.ocks.org/d3noob/f46a355d35077a7dc12f9a97aeb6bc5d" target="_blank">
+                Axis Labels- D3Noob on Observable HQ</a></li>
+            <li><a href="https://www.youtube.com/watch?v=hrJ64jpYb0A" target="_blank">
+               Map in D3 Tutorial</a></li>
+            <li><a href="https://observablehq.com/@d3/u-s-state-capitals?collection=@d3/d3-geo" target="_blank">
+               D3 Map Resources - Observable HQ</a></li>
+            <li><a href="https://www.d3indepth.com/zoom-and-pan/" target="_blank">
+                Zoom and Pan - D3 in Depth
+            </a></li>
+            <li><a href="https://codepen.io/sorinbotirla/pen/QyoYgx" target="_blank">
+                Material design round mask menu (pure css)
+            </a></li>
+        </ul>
+
+
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,286 @@
+body {
+    font-family: Verdana;
+}
+
+h1, h3, h5 {
+    text-align: center;
+}
+
+nav {
+  width: 300px;
+  background: #003396;
+  color: whitesmoke;
+    opacity: 90%;
+  -webkit-clip-path: circle(24px at 30px 24px);
+  clip-path: circle(24px at 32px 24px);
+  -webkit-transition: -webkit-clip-path 0.5625s, clip-path 0.375s;
+  transition: -webkit-clip-path 0.5625s, clip-path 0.375s;
+    margin-bottom: -200px;
+    position: sticky;
+    top: 10px;
+    z-index: 1;
+}
+
+nav:hover {
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  -webkit-transition-duration: 0.75s;
+  transition-duration: 0.75s;
+  -webkit-clip-path: circle(390px at 225px 24px);
+  clip-path: circle(390px at 150px 24px);
+}
+
+#expNav {
+    width: 180px;
+    background: #3373C4;
+    color: whitesmoke;
+    opacity: 90%;
+    margin-bottom: -170px;
+    z-index: 5;
+}
+
+a {
+  display: block;
+  line-height: 50px;
+  padding: 0 20px;
+  color: inherit;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+a:hover { background: whitesmoke;
+          color: #003396;
+          opacity: 100%;}
+
+a:active { background: white;}
+
+.navicon {
+  padding: 23px 20px;
+  cursor: pointer;
+  -webkit-transform-origin: 32px 24px;
+  -ms-transform-origin: 32px 24px;
+  transform-origin: 32px 24px;
+}
+
+.navicon div {
+  position: relative;
+  width: 22px;
+  height: 3px;
+  background: white;
+}
+
+.navicon div:before,
+.navicon div:after {
+  display: block;
+  content: "";
+  width: 22px;
+  height: 3px;
+  background: white;
+  position: absolute;
+}
+
+.navicon div:before { top: -7px; }
+
+.navicon div:after { top: 7px; }
+
+#homePage {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+body {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.mapSect {
+    margin-top: 210px;
+}
+
+.column {
+    float: left;
+    width: 33.3%
+}
+
+.col {
+    float: left;
+    }
+
+    .left {
+    width: 15%;
+    }
+
+    .right {
+    width: 85%;
+    }
+
+    .mapRow:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+
+.mapFrame {
+    margin-left: 50px;
+}
+
+#legend {
+    margin-left: -80px;
+    margin-top: 150px;
+}
+.leg {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-content: center;
+}
+
+.legText {
+    margin-top: -120px;
+}
+
+.pop {
+    fill: #1750AC;
+    opacity: 70%
+}
+
+#sev1 {
+    fill: #73B9EE;
+    opacity: 70%
+}
+
+#sev2 {
+    fill: #5494DA;
+    opacity: 70%
+}
+
+#sev3 {
+    fill: #3373C4;
+    opacity: 70%
+}
+
+#sev4 {
+    fill: #1750AC;
+    opacity: 70%
+}
+
+#sev5 {
+    fill: #003396;
+    opacity: 70%
+}
+
+#snap1 {
+    fill: #73B9EE;
+    opacity: 80%
+}
+
+#snap2 {
+    fill: #5494DA;
+    opacity: 80%
+}
+
+#snap3 {
+    fill: #3373C4;
+    opacity: 80%
+}
+
+#snap4 {
+    fill: #1750AC;
+    opacity: 80%
+}
+
+#snap5 {
+    fill: #003396;
+    opacity: 80%
+}
+
+.subText{
+    font-size:  12px;
+}
+
+#reset {
+    margin-left: 10px;
+    position: sticky;
+    top: 70px;
+}
+
+#scatter {
+    width: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#stateFilter {
+    height: 60px;
+    margin-top: 220px;
+    margin-left:-255px;
+}
+
+#submitFilter {
+    height: 60px;
+    margin-top: 220px;
+}
+
+#filterLabel {
+    margin-top: 180px;
+}
+
+.point {
+    fill: #1750AC;
+    opacity: 50%;
+}
+
+.urbanPoint {
+    fill: slateblue;
+    opacity: 50%;
+}
+
+.axisLabel {
+    text-anchor: middle;
+}
+
+.tooltip {
+  position: absolute;
+  background-color: whitesmoke;
+  border: solid;
+  border-width: 2px;
+  border-radius: 5px;
+  border-color: lightskyblue;
+  padding: 5px;}
+
+.selected {
+    opacity: 1;
+    stroke: black;
+    stroke-width: 2px;
+}
+
+#scatterRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-content: center;
+}
+.scatterColumn {
+    padding-left: 10%;
+    padding-right: 15%;
+    padding-bottom: 10%;
+    width: 85%;
+}
+
+.legendCol {
+    width: 15%;
+    padding-right: 5%;
+    padding-top: 8%;
+}
+
+blockquote {
+    background: #003396;
+    opacity: 70%;
+    padding: 1%;
+    align-items: center;
+    color: whitesmoke;
+}

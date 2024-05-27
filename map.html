@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" http-equiv="encoding">
+    <title>Map and Associated Scatter Plots</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src='js/d3.v6.1.1/d3.min.js'></script>
+    <script src='js/topojson.js'></script>
+
+</head>
+<body>
+    <nav>
+        <div class="navicon">
+        <div></div>
+        </div>
+        <a href="index.html">Home</a>
+        <a href="map.html">Map Analysis and Exploration</a>
+        <a href="poverty.html">Poverty Rate Analysis</a>
+    </nav>
+
+    <p class="groove"> <h1>Mapping Food Insecurity Across the USA</h1> </p>
+    <p><strong>Click</strong> Map Exploration Below to explore more of the map with zoom and tooltip features.</p>
+
+    <div id = 'expNav'>
+        <a href="mapExplore.html">Map Exploration</a>
+    </div>
+
+    <div class="mapSect">
+        <button id='reset'>Reset Selection</button>
+        
+        <div class='mapRow'>
+            <div id="map" class = 'col right'>
+                <p><strong>Brush over a portion of the map </strong>
+                    to see the linked points highlighted on the scatterplots below.</p>
+
+            </div>
+
+            <div id='legend' class = 'col left'>
+                <h3> Scroll downwards
+                    <big><big><big><big>&#8595;</big></big></big></big>
+                    <br>
+                    to see the linked scatterplots</h3>
+
+                <br>
+                <br>
+
+                <h4> Legend: </h4>
+                <p> Population </p>
+                <p class = 'leg'>
+                    <svg class = 'pop'> <circle cx='10px' cy='20px' r='4px'/>></svg>
+                    <svg class = 'pop'> <circle cx='10px' cy='20px' r='6px'/>></svg>
+                    <svg class = 'pop'> <circle cx='10px' cy='20px' r='8px'/>></svg>
+                    <svg class = 'pop'> <circle cx='10px' cy='20px' r='10px'/>></svg>
+                    <svg class = 'pop'> <circle cx='13px' cy='20px' r='12px'/>></svg>
+                </p>
+                <p class = 'legText'> Severity </p>
+                <p> (% of people greater than 10 miles from a grocery store) </p>
+                <p class = 'subText'>0% --> 100% (20% increments)</p>
+                <p class = 'leg'>
+                    <svg id = 'sev1'> <circle cx='10px' cy='20px' r='8px'/>></svg>
+                    <svg id = 'sev2'> <circle cx='10px' cy='20px' r='8px'/>></svg>
+                    <svg id = 'sev3'> <circle cx='10px' cy='20px' r='8px'/>></svg>
+                    <svg id = 'sev4'> <circle cx='10px' cy='20px' r='8px'/>></svg>
+                    <svg id = 'sev5'> <circle cx='10px' cy='20px' r='8px'/>></svg>
+                </p>
+
+            </div>
+
+        </div>
+
+        <div id="row">
+            <div id="subplot1" class="column">
+                <h3>% Food Insecure vs. County Population</h3>
+            </div>
+
+            <div id="subplot2" class="column">
+                <h3>% Food Insecure vs. % on SNAP</h3>
+            </div>
+
+            <div id="subplot3" class="column">
+                <h3>% Food Insecure vs. % Without Vehicles</h3>
+            </div>
+        </div>
+
+    </div>
+
+    <script type="module" src="js/map.js"></script>
+</body>
+</html>
